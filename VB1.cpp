@@ -1,3 +1,8 @@
+// This code implements the example shown in the Variational Bayes page on Wikipedia. Link: https://en.wikipedia.org/wiki/Variational_Bayesian_methods
+// Normal samples were drawn from a normal distribution and stored in vector ex_a.
+//These samples were used to estimate the mean and standard deviation by using Variational Bayes algorithm.
+// The output is the mean and standard deviation calculated in each iteration.
+
 #include <iostream>
 #include <omp.h>
 #include <random>
@@ -88,7 +93,7 @@ int main(){
     //run_time = omp_get_wtime() - start_time;
     //std::cout<<"time: "<<run_time<<std::endl;
     
-    //for(int i =0; i < 1000; i++)std::cout<<"mean is "<< mean[i] <<" and variance is " << var[i] << std::endl;
+    //for(int i =0; i < 1000; i++)std::cout<<"mean is "<< mean[i] <<" and sd is " << var[i] << std::endl;
     
 
 }
