@@ -1,3 +1,8 @@
+// This code implements the example shown in the Variational Bayes page on Wikipedia. Link: https://en.wikipedia.org/wiki/Variational_Bayesian_methods
+// Normal samples were drawn from a normal distribution and stored in vector ex_a.
+//These samples were used to estimate the mean and standard deviation by using Variational Bayes algorithm.
+// The output is the mean and standard deviation calculated in each iteration.
+
 #include <iostream>
 #include <omp.h>
 #include <random>
@@ -14,7 +19,7 @@ int main(){
     #pragma omp parallel
     {
         #pragma omp for
-        for(int i = 0; i < dim*gene; i++){ex_a[i] = distribution(generator);} 
+        for(int i = 0; i < dim*gene; i++){ex_a[i] = distribution(generator);} //generating samples
 
     }
     
